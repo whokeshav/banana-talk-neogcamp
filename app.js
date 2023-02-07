@@ -1,4 +1,11 @@
-console.log("script is working from different file ")
-var username=prompt("give me the user name ")
-alert("script is working  fine from different file"+ username )
+var btntranslate=document.querySelector("#btn-translate")
+var txtinput=document.querySelector("#txt-input")
+console.log(txtinput)
+function clickHandler()
+{console.log("clicked")}
+if (btntranslate) {
+    btntranslate.addEventListener("click",clickHandler())
+}
 
+
+ 
